@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    border-top: 10px solid #54d4ce;
+}
+
+body {
+    max-width: 1120px;
+    margin: 0 auto; /* auto centers the page horizontally. */
+    padding: 52px 32px 72px; /* top, left and right, bottom */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #242529;
+}
+
+h1 {
+    max-width: 850px;
+    margin: 0 0 16px;
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+h2 {
+    margin: 0 0 22px;
+    padding-left: 14px;
+    border-left: 5px solid #087f8c;
+    font-size: 28px;
+    letter-spacing: -0.7px;
+}
+
+
+body > h4 {
+    margin: 0 0 24px;
+    color: #626268;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+a {
+    color: #086c77;
+}
+
+a:hover {
+    color: #034b53;
+}
+
+
+body > a {
+    padding: 7px 16px;
+    margin-bottom: 12px;
+    border: 1px solid #b5dad7;
+    border-radius: 30px;
+    background-color: #e2f4f0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+section {
+    margin-top: 42px;
+}
+
+img {
+    display: block; /* Removes the small gap below inline images. */
+    max-width: 100%;
+    height: auto;
+}
+
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equally wide columns. */
+    gap: 24px;
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none; /* nothing for the list BLANKKKKKKK*/
+}
+
+.recipe-grid > li {
+    min-width: 0;
+}
+
+.recipe-grid a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden; /* Clips the photo stops it . */
+    background-color: #ffffff;
+    color: #242529;
+    text-decoration: none;
+}
+
+.recipe-grid img {
+    order: -1; /* Shows the photo above its title in this flex container. */
+    width: 100%;
+    height: 240px;
+    object-fit: cover; /* Fills the photo area without stretching. */
+}
+
+.recipe-grid h3 {
+    margin: 0;
+    padding: 22px 24px 24px;
+    font-size: 23px;
+}
+
+
+.browse-more a {
+    border-color: #c4e6df;
+    color: #08616b;
+    box-shadow: none;
+}
+
+.browse-more h3 {
+    padding: 16px 24px;
+    font-size: 17px;
+}
+
+
+
+.recipe-page {
+    max-width: 900px; /* Shorter lines make instructions easier to read. */
+}
+
+.recipe-page > h3 {
+    margin-top: 24px;
+    font-size: 19px;
+    font-weight: normal;
+    line-height: 1.7;
+}
+
+.recipe-page > h5 {
+    color: #626268;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.recipe-page > img {
+    width: 100%;
+    max-height: 460px;
+    object-fit: cover;
+    margin: 28px 0;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px #2425291a;
+}
+
+.recipe-page section {
+    padding: 28px;
+    border: 1px solid #e4e2dc;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 0 #e7e4dc;
+}
+
+
+#ingredients {
+    background-color: #eaf6f1;
+}
+
+.recipe-page li {
+    margin-bottom: 12px;
+    padding-left: 6px;
+}
+
+.recipe-page li::marker {
+    color: #087f8c; /*bullet point or list*/
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #e4e2dc;
+    text-align: left;
+}  /*for table */
+
+
+
+
+
+/*!*universal selector*!*/
+/**{*/
+/*    color: sienna;*/
+/*}*/
+/*!*element selector*!*/
+/*h1{*/
+/*    background-color: blanchedalmond;*/
+/*}*/
+/*p{*/
+/*    color: black;*/
+
+/*}*/
+/*!*for class*!*/
+/*.alert-text{*/
+
+/*    color: deeppink;*/
+/*}*/
+/*!*p element and (.) class together is this *!*/
+/*p.alert-text{*/
+
+/*}*/
+/*!*# for id *!*/
+/*#nutritionFacts{*/
+/* color: saddlebrown;*/
+/*}*/
+/*!*grouping *!*/
+/*ul,ol {*/
+/*    list-style-position: unset;*/
+/*}*/
+/*!*extending*!*/
+/*ul{*/
+/*    list-style-position: inside;*/
+/*    list-style-type: circle;*/
+/*}*/
+/*ol{*/
+/*    list-style-position: outside;*/
+/*    list-style-type: upper-roman;*/
+/*}*/
+
+/*h2 + p.alert-text{*/
+/*    color: gray;*/
+/*}*/
+/*!*decendent combinator / direct child or other decendent*!*/
+/*a p {*/
+/*    color: coral;*/
+/*}*/
+/*!*direct decendent also p alert text *!*/
+/*h1 > p.alert-text{*/
+
+/*}*/
+/*!*same specificity later one take place, only resolves conflict *!*/
+/*!*selectors & conbinators*!*/
+/*!*styling conflicts*!*/
+
+/*!*border box reset *!*/
+/*html *{*/
+/*    box-sizing: border-box;*/
+
+/*}*/
+/**, *:before, *:after, *:after {*/
+/*    box-sizing: inherit;*/
+/*}*/
+
+/*!*in line elements?*!*/
