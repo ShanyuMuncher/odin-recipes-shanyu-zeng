@@ -209,7 +209,67 @@ th, td {
 
 
 
+.navbar {
+    margin-bottom: 36px;
+    padding: 12px;
+    background-color: #eaf6f1;
+    border-radius: 8px;
+}
 
+.navbar a {
+    display: inline-block; /* Links sit beside each other and accept padding. */
+    padding: 10px 16px;
+    color: #08616b;
+    font-weight: bold;
+    text-decoration: none; /* Removes the link underline. */
+    border-radius: 6px;
+}
+
+
+.info-page {
+    max-width: 720px;
+    padding: 28px;
+    background-color: #f5faf7;
+    border: 1px solid #d6e7df;
+    border-radius: 12px;
+    line-height: 1.7;
+}
+
+.info-page h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.info-page h2 {
+    margin-top: 28px;
+    font-size: 24px;
+}
+
+.info-page address {
+    font-style: normal; /* cuz the text is italic by default. */
+}
+
+.chef-photo {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    margin: 24px auto; /* Adds space above/below and centers the photo. */
+    border-radius: 12px; /* Rounds the corners. */
+}
+
+
+footer {
+    margin-top: 48px;
+    padding: 20px 0;
+    border-top: 1px solid #d6e7df;
+    color: #626268;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
 
 /*!*universal selector*!*/
 /**{*/
